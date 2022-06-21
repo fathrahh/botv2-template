@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="tab">
+            <ul class="tab-container">
+                <li class="tab-list active" data-tab="update">Update Stock</li>
+                <li class="tab-list" data-tab="daftar">Daftar Order</li>
+                <li class="tab-list" data-tab="review">Review Order</li>
+            </ul>
+            <div class="border-span"></div>
+        </header>
+        <main class="content">
+            <div class="content-layout active">
+                <div class="location">
+                    <h4 class="location__title">Lokasi</h4>
+                    <input type="radio" name="als" id="als">
+                    <label class="location__label" for="als">ALS</label>
+                    <input type="radio" name="ga" id="ga">
+                    <label class="location__label" for="ga">GA</label>
+                    <input type="radio" name="glc" id="glc">
+                    <label class="location__label" for="glc">GLC</label>
+                    <input type="radio" name="mp" id="mp">
+                    <label class="location__label" for="mp">MP</label>
+                    <input type="radio" name="pik" id="pik">
+                    <label class="location__label" for="pik">PIK</label>
+                </div>
+                <div class="pos">
+                    <h4 class="pos__title">Access pos</h4>
+                    <div class="pos__form">
+                        <div class="form-control">
+                            <label class="form-label" for="id-pos">ID</label>
+                            <input class="form-input" type="text" id="id-pos">
+                        </div>
+                        <div class="form-control">
+                            <label class="form-label" for="password-pos">Password</label>
+                            <input class="form-input" type="password" id="password-pos">
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <label for="remember-me" class="form-label">remember me</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-layout" >Daftar Order</div>
+            <div class="content-layout" >Review Order</div>
+        </main>
+    </div>
+</body>
+</html>

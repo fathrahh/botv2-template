@@ -1,0 +1,147 @@
+:root{
+    --primary : #0D6EFD;
+    --dark-blue : #0B5ED7;
+}
+
+*, 
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 991px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+
+    margin-inline: auto;
+}
+
+/* Tab */
+.tab{
+    display: flex;
+}
+
+.tab-container {
+    display: flex;
+}
+
+.tab-list{
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    padding: 18px 32px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid silver;
+    border-right: none;
+
+}
+
+.tab-list:last-child{
+    border: 1px solid silver;
+}
+
+.tab-list:not(.active):hover{
+    background-color: rgb(244, 239, 239);
+    color: rgb(36, 34, 34);
+}
+
+.tab-list.active{
+    border-bottom: none;
+}
+
+.tab-list.active::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+}
+
+.border-span{
+    flex: 1;
+    border-bottom: 1px solid silver;
+}
+
+/* content */
+
+.content{
+    flex : 1;
+    padding: 40px;
+
+    border: 1px solid silver;
+    border-top: none;
+}
+
+.content-layout {
+    display: none;
+}
+
+.content-layout.active{
+    display: block;
+}
+
+/* location */
+
+.location{
+    margin-bottom: 10px;
+}
+
+.location__title { 
+    margin-bottom: 10px;
+}
+
+.location__label {
+    margin-right: 8px;
+}
+
+/* pos */
+
+.pos__title{ 
+    margin-bottom: 10px;
+}
+
+.pos__form{
+    display: flex;
+    align-items: center;
+}
+
+
+.form-control{
+    margin: 4px 12px;
+}
+
+.form-control > .form-label{
+    margin-inline: 5px;
+}
+
+.form-control > .form-input {
+    padding: 6px 16px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
