@@ -118,6 +118,10 @@ ul{
 
 /* pos */
 
+.pos{
+    margin-bottom: 10px;
+}
+
 .pos__title{ 
     margin-bottom: 10px;
 }
@@ -129,6 +133,9 @@ ul{
 
 
 .form-control{
+    display: flex;
+    gap: 5px;
+    align-items: center;
     margin: 4px 12px;
 }
 
@@ -137,7 +144,7 @@ ul{
 }
 
 .form-control > .form-input {
-    padding: 6px 16px;
+    padding: 5px 16px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -145,3 +152,24 @@ ul{
     -o-border-radius: 4px;
 }
 
+.cookie .form-label{
+    width: 250px;
+}
+
+.cookie .form-input{
+    flex: 1;
+}
+
+.option{
+    margin-top: 20px;
+}
+
+.markup{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.markup .form-control {
+    flex: 1;
+}
