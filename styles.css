@@ -162,14 +162,23 @@ ul{
 
 .option{
     margin-top: 20px;
+    display: flex;
+}
+
+.option__markup , .option__other {
+    flex : 1;
 }
 
 .markup{
     display: flex;
-    width: 50%;
     align-items: center;
 }
 
 .markup .form-control {
     flex: 1;
+}
+
+.update-form {
+    display: flex;
+    margin-block: 12px;
 }

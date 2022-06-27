@@ -67,42 +67,63 @@
                     </div>
                 </div>
                 <div class="option">
-                    <div class="markup">
-                        <div class="form-control">
-                            <input class="js-cbMarkup" type="checkbox" id="goapotik" data-markup="goapotik">
-                            <label class="form-label" for="goapotik">GOAPOTIK</label>
+                    <div class="option__markup">
+                        <div class="markup">
+                            <div class="form-control">
+                                <input class="js-cbMarkup" type="checkbox" id="goapotik" data-markup="goapotik">
+                                <label class="form-label" for="goapotik">GOAPOTIK</label>
+                            </div>
+                            <div class="form-control">
+                                <label class="form-label" for="markup-goapotik">Markup</label>
+                                <input class="form-input js-input-markup" type="number" id="markup-goapotik" data-markup="goapotik" disabled>
+                                %
+                            </div>
+                        </div>
+                        <div class="markup">
+                            <div class="form-control">
+                                <input class="js-cbMarkup" type="checkbox" id="sehatq" data-markup="sehatq">
+                                <label class="form-label" for="sehatq">SehatQ</label>
+                            </div>
+                            <div class="form-control">
+                                <label class="form-label" for="markup-sehatq">Markup</label>
+                                <input class="form-input js-input-markup" type="number" id="markup-sehatq" data-markup="sehatq" disabled>
+                                %
+                            </div>
+                        </div>
+                        <div class="markup">
+                            <div class="form-control">
+                                <input class="js-cbMarkup" type="checkbox" id="goapotik" data-markup="klikdokter">
+                                <label class="form-label" for="goapotik">KLIKDOKTER</label>
+                            </div>
+                            <div class="form-control">
+                                <label class="form-label" for="markup-goapotik">Markup</label>
+                                <input class="form-input js-input-markup" type="number" id="markup-goapotik" data-markup="klikdokter" disabled>
+                                %
+                            </div>
                         </div>
                         <div class="form-control">
-                            <label class="form-label" for="markup-goapotik">Markup</label>
-                            <input class="form-input js-input-markup" type="number" id="markup-goapotik" data-markup="goapotik" disabled>
-                            %
+                            <input class="js-cbMarkup-all" type="checkbox" id="markup-all">
+                            <label class="form-label" for="markup-all">ALL</label>
                         </div>
                     </div>
-                    <div class="markup">
-                        <div class="form-control">
-                            <input class="js-cbMarkup" type="checkbox" id="sehatq" data-markup="sehatq">
-                            <label class="form-label" for="sehatq">SehatQ</label>
+                    <div class="option__other">
+                        <div class="excel-product form-control">
+                            <label class="form-label" for="split-excel">
+                                split output excel in
+                            </label>
+                            <input class="form-input" id="split-excel" type="number">
+                            <span>product</span>
                         </div>
-                        <div class="form-control">
-                            <label class="form-label" for="markup-sehatq">Markup</label>
-                            <input class="form-input js-input-markup" type="number" id="markup-sehatq" data-markup="sehatq" disabled>
-                            %
+                        <div class="update-form">
+                            <div class="form-control">
+                                <input type="checkbox" id="update-nextcloud">
+                                <label class="form-label" for="update-nextcloud">NextCloud</label>
+                            </div>
+                            <div class="form-control">
+                                <input type="checkbox" id="update-xlsx-tokopedia">
+                                <label class="form-label" for="update-xlsx-tokopedia">.XLSX Tokopedia</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="markup">
-                        <div class="form-control">
-                            <input class="js-cbMarkup" type="checkbox" id="goapotik" data-markup="klikdokter">
-                            <label class="form-label" for="goapotik">KLIKDOKTER</label>
-                        </div>
-                        <div class="form-control">
-                            <label class="form-label" for="markup-goapotik">Markup</label>
-                            <input class="form-input js-input-markup" type="number" id="markup-goapotik" data-markup="klikdokter" disabled>
-                            %
-                        </div>
-                    </div>
-                    <div class="form-control">
-                        <input class="js-cbMarkup-all" type="checkbox" id="markup-all">
-                        <label class="form-label" for="markup-all">ALL</label>
                     </div>
                 </div>
             </div>
