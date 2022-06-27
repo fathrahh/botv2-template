@@ -49,7 +49,7 @@
                             <input type="checkbox" name="remember-me" id="remember-me">
                             <label for="remember-me" class="form-label">remember me</label>
                         </div>
-                        <button class="btn">Update</button>
+                        <button class="btn js-btn-update" >Update</button>
                     </div>
                 </div>
                 <div class="cookie">
@@ -74,17 +74,6 @@
                     <div class="option__markup">
                         <div class="markup">
                             <div class="form-control">
-                                <input class="js-cbMarkup" type="checkbox" id="goapotik" data-markup="goapotik">
-                                <label class="form-label" for="goapotik">GOAPOTIK</label>
-                            </div>
-                            <div class="form-control">
-                                <label class="form-label" for="markup-goapotik">Markup</label>
-                                <input class="form-input js-input-markup" type="number" id="markup-goapotik" data-markup="goapotik" disabled>
-                                %
-                            </div>
-                        </div>
-                        <div class="markup">
-                            <div class="form-control">
                                 <input class="js-cbMarkup" type="checkbox" id="sehatq" data-markup="sehatq">
                                 <label class="form-label" for="sehatq">SehatQ</label>
                             </div>
@@ -105,6 +94,17 @@
                                 %
                             </div>
                         </div>
+                        <div class="markup">
+                            <div class="form-control">
+                                <input class="js-cbMarkup" type="checkbox" id="goapotik" data-markup="goapotik">
+                                <label class="form-label" for="goapotik">GOAPOTIK</label>
+                            </div>
+                            <div class="form-control">
+                                <label class="form-label" for="markup-goapotik">Markup</label>
+                                <input class="form-input js-input-markup" type="number" id="markup-goapotik" data-markup="goapotik" disabled>
+                                %
+                            </div>
+                        </div>
                         <div class="form-control">
                             <input class="js-cbMarkup-all" type="checkbox" id="markup-all">
                             <label class="form-label" for="markup-all">ALL</label>
@@ -115,16 +115,16 @@
                             <label class="form-label" for="split-excel">
                                 split output excel in
                             </label>
-                            <input class="form-input" id="split-excel" type="number">
+                            <input class="form-input" id="split-excel" type="number" disabled>
                             <span>product</span>
                         </div>
                         <div class="update-form">
                             <div class="form-control">
-                                <input type="checkbox" id="update-nextcloud">
+                                <input type="checkbox" id="update-nextcloud" disabled>
                                 <label class="form-label" for="update-nextcloud">NextCloud</label>
                             </div>
                             <div class="form-control">
-                                <input type="checkbox" id="update-xlsx-tokopedia">
+                                <input type="checkbox" id="update-xlsx-tokopedia" disabled>
                                 <label class="form-label" for="update-xlsx-tokopedia">.XLSX Tokopedia</label>
                             </div>
                         </div>
@@ -133,21 +133,22 @@
             </div>
             <div class="content-layout">
                 <div class="daftar-order">
+                    <button class="btn js-btn-cetak-pesanan">Cetak List Pesanan Baru</button>
                     <div class="form-control">
-                        <input type="checkbox" id="">
-                        <label for="">GOAPOTIK</label>
+                        <input class="js-cbOrder" type="checkbox" id="daftar-order-goapotik">
+                        <label for="daftar-order-goapotik">GOAPOTIK</label>
                     </div>
                     <div class="form-control">
-                        <input type="checkbox" id="">
-                        <label for="">KLIKDOKTER</label>
+                        <input class="js-cbOrder" type="checkbox" id="daftar-order-klikdokter">
+                        <label for="daftar-order-klikdokter">KLIKDOKTER</label>
                     </div>
                     <div class="form-control">
-                        <input type="checkbox" id="">
-                        <label for="">SEHATQ</label>
+                        <input class="js-cbOrder" type="checkbox" id="daftar-order-sehatq">
+                        <label for="daftar-order-klikdokter">SEHATQ</label>
                     </div>
                     <div class="form-control">
-                        <input type="checkbox" id="">
-                        <label for="">ALL</label>
+                        <input type="checkbox" id="cb-order-all">
+                        <label for="cb-order-all">ALL</label>
                     </div>
                 </div>
             </div>
