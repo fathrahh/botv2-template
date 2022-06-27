@@ -16,7 +16,6 @@
             <ul class="tab-container">
                 <li class="tab-list active" data-tab="update">Update Stock</li>
                 <li class="tab-list" data-tab="daftar">Daftar Order</li>
-                <li class="tab-list" data-tab="review">Review Order</li>
             </ul>
             <div class="border-span"></div>
         </header>
@@ -24,15 +23,15 @@
             <div class="content-layout active">
                 <div class="location">
                     <h4 class="location__title">Lokasi</h4>
-                    <input type="radio" name="als" id="als">
+                    <input type="radio" name="radio-location" id="als">
                     <label class="location__label" for="als">ALS</label>
-                    <input type="radio" name="ga" id="ga">
+                    <input type="radio" name="radio-location" id="ga">
                     <label class="location__label" for="ga">GA</label>
-                    <input type="radio" name="glc" id="glc">
+                    <input type="radio" name="radio-location" id="glc">
                     <label class="location__label" for="glc">GLC</label>
-                    <input type="radio" name="mp" id="mp">
+                    <input type="radio" name="radio-location" id="mp">
                     <label class="location__label" for="mp">MP</label>
-                    <input type="radio" name="pik" id="pik">
+                    <input type="radio" name="radio-location" id="pik">
                     <label class="location__label" for="pik">PIK</label>
                 </div>
                 <div class="pos">
@@ -50,20 +49,25 @@
                             <input type="checkbox" name="remember-me" id="remember-me">
                             <label for="remember-me" class="form-label">remember me</label>
                         </div>
+                        <button class="btn">Update</button>
                     </div>
                 </div>
                 <div class="cookie">
                     <div class="form-control">
-                        <label class="form-label" for="">Login Cookie MITRA GOAPOTIK</label>
-                        <input class="form-input" type="text">
+                        <label class="form-label" for="cookie-goapotik">Login Cookie MITRA GOAPOTIK</label>
+                        <input class="form-input" id="cookie-goapotik" type="text">
                     </div>
                     <div class="form-control">
-                        <label class="form-label" for="">Login Cookie SehatQ</label>
-                        <input class="form-input" type="text">
+                        <label class="form-label" for="cookie-sehatq">Login Cookie SehatQ</label>
+                        <input class="form-input" id="cookie-sehatq" type="text">
                     </div>
                     <div class="form-control">
-                        <label class="form-label" for="">Login Cookie NextCloud</label>
-                        <input class="form-input" type="text">
+                        <label class="form-label" for="cookie-klikdokter">Login Cookie Klikdokter</label>
+                        <input class="form-input" id="cookie-klikdokter" type="text">
+                    </div>
+                    <div class="form-control">
+                        <label class="form-label" for="cookie-nextcloud">Login Cookie NextCloud</label>
+                        <input class="form-input" id="cookie-nextcloud" type="text">
                     </div>
                 </div>
                 <div class="option">
@@ -127,8 +131,26 @@
                     </div>
                 </div>
             </div>
-            <div class="content-layout">Daftar Order</div>
-            <div class="content-layout">Review Order</div>
+            <div class="content-layout">
+                <div class="daftar-order">
+                    <div class="form-control">
+                        <input type="checkbox" id="">
+                        <label for="">GOAPOTIK</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" id="">
+                        <label for="">KLIKDOKTER</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" id="">
+                        <label for="">SEHATQ</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" id="">
+                        <label for="">ALL</label>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 </body>

@@ -34,6 +34,32 @@ ul{
     margin-inline: auto;
 }
 
+.btn{
+    background-color: var(--dark-blue);
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    border: var(--primary);
+    border-radius: 4px;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: 125ms linear all;
+    -webkit-transition: 125ms linear all;
+    -moz-transition: 125ms linear all;
+    -ms-transition: 125ms linear all;
+    -o-transition: 125ms linear all;
+}
+
+.btn:hover{
+    background-color: var(--primary);
+    border-color: var(--dark-blue);
+}
+
 /* Tab */
 .tab{
     display: flex;
@@ -181,4 +207,8 @@ ul{
 .update-form {
     display: flex;
     margin-block: 12px;
+}
+
+.daftar-order{
+    display: flex;
 }
