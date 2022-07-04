@@ -52,7 +52,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
+                                <td><input type="checkbox" name="" id=""></td>
                                 <td>SehatQ</td>
                                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
                                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
@@ -68,7 +68,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td><input type="checkbox" name="" id=""></td>
                                 <td>SehatQ</td>
                                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
                                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
@@ -84,7 +84,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td><input type="checkbox" name="" id=""></td>
                                 <td>SehatQ</td>
                                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
                                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
@@ -99,9 +99,51 @@
                                     </div>
                                 </td>
                             </tr>
-                    
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>SehatQ</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, harum.</td>
+                                <td>
+                                    <div class="form-control">
+                                        <input id="pilih1" type="checkbox">
+                                        <label class="form-label" for="pilih1">Terima</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <input id="nanti1" type="checkbox">
+                                        <label class="form-label" for="nanti">Nanti</label>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="flex flex-col mt-sm">
+                    <div class="form-control">
+                        <input type="checkbox" id="cb-all" class="form-input">
+                        <label for="cb-all" class="form-label">Pilih Semua</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" id="cb-all" class="form-input">
+                        <label for="cb-all" class="form-label">Proses terima terpilih & cetak resi sekaligus</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" id="cb-all" class="form-input">
+                        <label for="cb-all" class="form-label">Proses nanti terpilih</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox" id="cb-all" class="form-input">
+                        <label for="cb-all" class="form-label">Remind me pesanan "nanti" dalam 30 menit sebelum expired</label>
+                    </div>
+                    <div class="export-penjualan">
+                        <span>Export Penjualan Mulai</span>
+                        <input type="date" id="penjualan-from">
+                        <span>sampai</span>
+                        <input type="date" id="penjualan-to">
+                            <button class="btn js-btn-download">Unduh .xlsx penjualan</button>
+                    </div>
+                    <div class="message-validate-error-wrapper">
+                    </div>
                 </div>
             </div>
         </main>
